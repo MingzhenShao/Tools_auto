@@ -20,20 +20,22 @@ import os, time
 
 import smtplib
 
-smtp = smtplib.SMTP() 
-smtp.connect('smtp.163.com,25') 
+smtp = smtplib.SMTP()       #smtplib.SMTP('smtp.163.com', 25)   #also works
+smtp.connect('smtp.163.com', 25) 
 
 username = "smz13963229340@163.com"
-password = "smz&&824"
+password = ""
 
 sender = "smz13963229340@163.com"
 receiver = ["mingzhen1993@gmail.com"]
 
-message = '''\
-Subject: Testing Mail
+message = '''From: SMZ <smz13963229340@163.com>
+To: Mingzhen <mingzhen1993@gmail.com>
+Subject: SMTP e-mail test2
 
-This is a testing message.
+This is a test e-mail message.
 '''
+
 smtp.login(username, password) 
 smtp.sendmail(sender, receiver, message) 
 smtp.quit()
