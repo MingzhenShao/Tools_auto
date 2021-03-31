@@ -23,15 +23,15 @@ import smtplib
 smtp = smtplib.SMTP()       #smtplib.SMTP('smtp.163.com', 25)   #also works
 smtp.connect('smtp.163.com', 25) 
 
-username = "smz13963229340@163.com"
+username = "s13@163.com"
 password = ""
 
-sender = "smz13963229340@163.com"
-receiver = ["mingzhen1993@gmail.com"]
+sender = "s13@163.com"
+receiver = ["m14@gmail.com"]
 
-message = '''From: SMZ <smz13963229340@163.com>
-To: Mingzhen <mingzhen1993@gmail.com>
-Subject: SMTP e-mail test2
+message = '''From: SMZ <s13@163.com>
+To: Mingzhen <m14@gmail.com>
+Subject: SMTP e-mail test
 
 This is a test e-mail message.
 '''
